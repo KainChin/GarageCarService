@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chọn Vai Trò Đăng Nhập</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style>
+            /* Thiết lập toàn bộ trang */
+            html, body {
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+            }
+
+            body {
+                background-color: #f8f9fa;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding-top: 40px;
+            }
+
+            /* Banner chào mừng */
+            .banner {
+                width: 100%;
+                background-color:#f8f9fa ;
+                padding: 20px 0;
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+                color: #000;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .sub-text {
+                font-size: 18px;
+                color: #555;
+                margin-bottom: 20px;
+                margin-top: 60px;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .role-card {
+                background: white;
+                padding: 15px;
+                border-radius: 12px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+                transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+                width: 180px;
+            }
+
+            .role-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+            }
+
+            .role-card img {
+                width: 70px;
+                height: 70px;
+                margin-bottom: 8px;
+            }
+
+            .role-card h5 {
+                margin: 8px 0;
+                font-size: 18px;
+                color: #333;
+            }
+
+            .role-card a {
+                display: inline-block;
+                padding: 8px 15px;
+                color: white;
+                text-decoration: none;
+                border-radius: 6px;
+                font-weight: bold;
+                transition: background 0.3s;
+            }
+
+            .customer { background-color: #007bff; }
+            .customer:hover { background-color: #0056b3; }
+            .saler { background-color: #28a745; }
+            .saler:hover { background-color: #1e7e34; }
+            .mechanic { background-color: #ffc107; color: #333; }
+            .mechanic:hover { background-color: #e0a800; }
+
+            .image-container {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+            }
+
+            .image-container a img {
+                width: 300px; /* Tăng kích thước ảnh */
+                height: auto;
+                border-radius: 15px; /* Bo góc mềm mại hơn */
+                transition: transform 0.3s, box-shadow 0.3s;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng đổ bóng */
+            }
+
+            .image-container a img:hover {
+                transform: scale(1.15);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Tăng hiệu ứng khi hover */
+            }
+
+
+
+            /* Footer luôn ở cuối trang */
+            footer {
+                width: 100%;
+                background: #bbdefb;
+                color: #000000;
+                text-align: center;
+                padding: 5px 0;
+                margin-top: auto;
+                font-size: 14px;
+            }
+
+            .footer-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2px;
+            }
+
+            .footer-content p {
+                margin: 2px 0;
+            }
+
+            .social-icons {
+                margin-top: 5px;
+            }
+
+            .social-icons a {
+                font-size: 20px;
+                margin: 0 8px;
+                transition: 0.3s;
+            }
+
+            /* Màu sắc đúng thương hiệu */
+            .social-icons a.facebook { color: #1877F2; }
+            .social-icons a.instagram { color: #E4405F; }
+            .social-icons a.tiktok { color: #000000; }
+
+            .social-icons a:hover {
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="banner">🚗 CHÀO MỪNG BẠN ĐẾN VỚI DỊCH VỤ XE HƠI FPT 🚗</div>
+        <!-- Thêm phần hiển thị 3 hình ảnh trước phần chọn vai trò -->
+        <br>
+        <br>
+        <h3>Hãy Đăng Nhập Để Biết Thêm Chi Tiết Về Dịch Vụ</h2>
+   
+        <h4 class="sub-text">Chọn vai trò đăng nhập</h4>
+
+        <div class="container">
+            <div class="role-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyfVtcUogZZ7LMhmB8aiXErQKr-7n8JST0jw&s" alt="Customer">
+                <h5>Khách Hàng</h5>
+                <a href="customerLogin.jsp" class="customer">Đăng Nhập</a>
+            </div>
+            <div class="role-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaN23av-r-3a5gkq-FsoK4YBJZq-zJA4XCaA&s" alt="Saler">
+                <h5>Nhân Viên</h5>
+                <a href="saleLogin.jsp" class="saler">Đăng Nhập</a>
+            </div>
+            <div class="role-card">
+                <img src="https://png.pngtree.com/png-clipart/20240508/original/pngtree-a-car-mechanic-cartoon-character-png-image_15035143.png" alt="mechanic">
+                <h5>Thợ Máy</h5>
+                <a href="mechanicLogin.jsp" class="mechanic">Đăng Nhập</a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Dịch Vụ Xe Hơi FPT.  Đến với chúng tôi vì sự an toàn của bạn 😘</p>
+                <p>Liên hệ: <a href="mailto:support@carservice.com">support@carservice.com</a></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
