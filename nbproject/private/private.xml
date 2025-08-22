@@ -3,8 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/fixxprj/GarageCarService8/GarageCarService8/web/index.html</file>
-            <file>file:/E:/fixxprj/GarageCarService8/GarageCarService8/web/customerLogin.jsp</file>
+            <file>file:/E:/fixxprj/GarageCarService8/GarageCarService8/web/MechanicDashboard.jsp</file>
+            <file>file:/E:/fixxprj/GarageCarService8/GarageCarService8/web/SaleDashboard.jsp</file>
+            <file>file:/E:/fixxprj/GarageCarService8/GarageCarService8/web/UpdateProfile.jsp</file>
+            <file>file:/E:/fixxprj/GarageCarService8/GarageCarService8/web/addCar.jsp</file>
+            <file>file:/E:/fixxprj/GarageCarService8/GarageCarService8/web/addPart.jsp</file>
+            <file>file:/E:/fixxprj/GarageCarService8/GarageCarService8/web/updateService.jsp</file>
+            <file>file:/E:/fixxprj/GarageCarService8/GarageCarService8/web/UpdateServiceTicketMechanic.jsp</file>
+            <file>file:/E:/fixxprj/GarageCarService8/GarageCarService8/web/updatePart.jsp</file>
+            <file>file:/E:/fixxprj/GarageCarService8/GarageCarService8/src/java/controller/AddCarServlet.java</file>
         </group>
     </open-files>
 </project-private>
